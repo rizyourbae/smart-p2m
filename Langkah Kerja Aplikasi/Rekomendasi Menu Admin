@@ -1,0 +1,75 @@
+Fitur Menu Admin Yang Masih Sering Kurang (WAJIB/UMUM DI LP2M):
+
+1. Manajemen Proposal Penelitian/Pengabdian
+Lihat, filter, cari proposal (berdasarkan status: masuk, diverifikasi, direview, diterima, ditolak, revisi)
+
+Approve/Reject proposal secara administratif (setelah verifikasi kelengkapan berkas, sebelum ke reviewer)
+
+Assign reviewer ke proposal (pilih reviewer manual/otomatis)
+
+2. Monitoring & Penetapan
+Penetapan proposal diterima/tidak (setelah review)
+
+Generate & upload kontrak penerima hibah/bantuan
+
+Cetak/unduh rekap proposal (PDF/Excel)
+
+Export data proposal dan output (untuk pelaporan ke kementerian)
+
+3. Manajemen Review & Reviewer
+Kelola akun reviewer (tambah, reset, nonaktifkan)
+
+Monitoring progres review (lihat siapa reviewer yang belum/telat review)
+
+Lihat rekap hasil review per proposal, per reviewer
+
+4. Monitoring Pelaksanaan & Output
+Pantau upload output/laporan (progress bar, status upload tiap proposal)
+
+Verifikasi laporan/output (setujui/tolak laporan yang sudah diupload dosen)
+
+Input nilai seminar hasil (opsional, jika seminar hasil harus dinilai admin)
+
+5. Manajemen Outcome & Arsip
+Lihat/upload outcome (output publikasi, HKI, dsb)
+
+Arsip data lama (status selesai, diarsipkan—agar dashboard tetap ringan)
+
+6. Kontrol Notifikasi & Email
+Setting notifikasi: admin bisa trigger/melihat email notifikasi yang dikirim ke dosen/reviewer
+
+Riwayat notifikasi: log pengiriman email/notif
+
+7. Manajemen Sistem & Referensi
+Setting sistem (tahun anggaran, jadwal pengajuan, template surat)
+
+Master data: bidang ilmu, jenis penelitian, sumber dana, dsb
+(biasanya diatur admin supaya user tinggal pilih, nggak ngarang)
+
+8. Laporan & Statistik
+Dashboard statistik: total proposal masuk, diterima, status proposal, rekap output, dsb
+(bisa berupa chart/bar/pie yang update realtime)
+
+BONUS FITUR (Nilai Tambah):
+Impor data dari Excel (misal untuk migrasi dosen, riwayat lama)
+
+Export data rekap (untuk kebutuhan laporan eksternal)
+
+Log aktivitas admin (untuk audit: siapa mengubah apa, kapan)
+
+Custom template surat keputusan (jika perlu generate SK otomatis)
+
+Live chat/support ticket (jika user/dosen butuh bantuan ke admin—opsional)
+
+RINGKASAN KEKURANGAN YANG PENTING:
+Manajemen proposal: approve, assign reviewer, monitoring siklus proposal sampai selesai
+
+Manajemen reviewer & review: kelola, tracking, monitoring progres
+
+Monitoring pelaksanaan: output, laporan, seminar hasil
+
+Dashboard & rekap: statistik, laporan, ekspor data
+
+Setting sistem: jadwal, tahun, master data
+
+Notifikasi & log: pengiriman email, audit perubahan

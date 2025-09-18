@@ -1,0 +1,36 @@
+Progress sementara kemajuan aplikasi smart p2m
+
+1. Role Admin
+ - mengatur halaman Faq di landing page
+ - menambahkan pengumuman di landing page
+ - menambahkan berita di landing page
+ - dapat melihat data dosen / peneliti
+ - dapat mengubah profil dosen / peneliti
+ - dapat mereset akun dosen / peneliti
+
+2. Role User (Dosen / Peneliti)
+ - dapat menambahkan profil dosen / peneliti
+ - dapat menambahkan profil sinta
+ - dapat menambahkan riwayat pendidikan
+ - dapat menambahkan kelengkapan dokumen pribadi dosen
+ - dapat menambahkan daftar kegiatan mandiri yang pernah dilakukan
+ - dapat mengajukan proposal penelitian
+ - dapat menambahkan dan mengelola publikasi yang pernah dikerjakan
+
+3. Role Reviewer
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+
+Siklus apalagi yang diperlukan
+ 1. seleksi administrasi penelitian dan pengabdian diluar BOPTN
+ 2. review proposal oleh reviewer
+ 3. penetapan penerima bantuan
+ 4. upload output/laporan bantuan
+ 5. review seminar hasil bantuan
+ 6. upload outcome bantuan
