@@ -19,6 +19,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Navigation\NavigationGroup;
+use Filament\Support\Enums\MaxWidth;
 use Solutionforest\FilamentLoginScreen\Filament\Pages\Auth\Themes\Theme3\LoginScreenPage as LoginScreenPage;
 
 class AdminPanelProvider extends PanelProvider
@@ -36,6 +37,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->spa()
+            ->maxContentWidth(MaxWidth::Full)
             ->databaseNotifications()
             ->databaseNotificationsPolling('30s')
             ->login(LoginScreenPage::class)
