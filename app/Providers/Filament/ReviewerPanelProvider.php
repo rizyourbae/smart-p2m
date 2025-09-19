@@ -20,7 +20,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Navigation\NavigationGroup;
 use Solutionforest\FilamentLoginScreen\Filament\Pages\Auth\Themes\Theme2\LoginScreenPage as LoginScreenPage;
-
+use Filament\Support\Enums\MaxWidth;
 class ReviewerPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
@@ -33,6 +33,7 @@ class ReviewerPanelProvider extends PanelProvider
             ->favicon(asset('assets/img/logo_uinsi.png'))
             ->id('reviewer')
             ->path('reviewer')
+            ->maxContentWidth(MaxWidth::Full)
             ->login()
             ->authGuard('reviewer')
             ->login(LoginScreenPage::class)
