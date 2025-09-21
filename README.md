@@ -54,7 +54,7 @@ Antarmuka yang bersih dan fokus untuk membantu reviewer menyelesaikan tugas peni
 1.  **Clone repositori:**
     ```bash
     git clone [https://github.com/](https://github.com/)[rizyourbae]/[smart-p2m].git
-    cd [NAMA_REPO_ANDA]
+    cd [smart-p2m]
     ```
 
 2.  **Install dependensi:**
