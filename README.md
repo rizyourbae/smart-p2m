@@ -1,66 +1,107 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SMART-P2M (Sistem Manajemen Riset & Pengabdian kepada Masyarakat)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**SMART-P2M** adalah aplikasi web komprehensif yang dirancang untuk mengelola seluruh siklus hidup proposal penelitian dan pengabdian kepada masyarakat di lingkungan akademik, khususnya di UIN Sultan Aji Muhammad Idris Samarinda. Sistem ini dibangun dengan **TALL Stack (Tailwind CSS, Alpine.js, Laravel, Livewire)** dan diperkuat oleh **Filament PHP** untuk menciptakan panel administrasi yang kuat dan interaktif.
 
-## About Laravel
+![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php)
+![Laravel Version](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel)
+![Filament Version](https://img.shields.io/badge/Filament-3.x-F59E0B?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi ini menyediakan tiga panel terpisah dengan dasbor dan fungsionalitas yang disesuaikan untuk setiap peran: **Admin**, **Dosen/Peneliti**, dan **Reviewer**.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Fitur Utama
 
-## Learning Laravel
+### 👨‍💻 Panel Admin
+Panel pusat untuk mengelola seluruh aspek sistem dengan kontrol penuh.
+- **Dasbor Analitik:** Dilengkapi widget statistik ringkas, tabel proposal yang butuh tindakan, serta grafik komposisi status proposal dan jumlah pengguna.
+- **Manajemen Proposal Lengkap:** Alur kerja penuh mulai dari melihat proposal masuk, menugaskan reviewer, memantau progres, hingga membuat keputusan final (`Diterima`, `Ditolak`, `Revisi`).
+- **"Smart Reviewer Selection":** Fitur cerdas untuk menugaskan reviewer berdasarkan bidang ilmu dan beban kerja saat ini, membuat proses penunjukan lebih efisien dan akurat.
+- **Manajemen Alur Review:** Admin dapat memajukan reviewer dari satu tahap penilaian ke tahap berikutnya (Proposal -> Presentasi -> Luaran).
+- **Notifikasi Terpusat:** Sistem notifikasi berbasis database untuk memantau aktivitas penting di dalam sistem.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 👩‍🏫 Panel Dosen/Peneliti (User)
+Sebuah portal personal bagi para dosen untuk mengelola semua aktivitas akademiknya.
+- **Dasbor Personal:** Header penyambut dinamis dengan jam *real-time*, statistik pencapaian (proposal diterima, perlu revisi), dan grafik personal untuk komposisi proposal dan publikasi.
+- **Pengajuan Proposal:** Wizard multi-tahap yang intuitif untuk mengajukan proposal baru, lengkap dengan unggah berkas dan detail anggota tim.
+- **Manajemen Profil Lengkap:** Halaman profil yang elegan untuk mengelola data diri, foto, dan password.
+- **Integrasi SINTA Otomatis:** Fitur *web scraper* canggih untuk menyinkronkan data profil SINTA (Score, Affiliation, dll.) secara otomatis dengan satu klik tombol.
+- **Pelacakan Proposal:** Dosen dapat melihat status proposalnya secara *real-time* dan melihat masukan dari reviewer secara anonim.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🕵️ Panel Reviewer
+Antarmuka yang bersih dan fokus untuk membantu reviewer menyelesaikan tugas penilaian dengan efisien.
+- **Dasbor Berbasis Tugas:** Widget statistik dan tabel "To-Do List" yang jelas memisahkan proposal yang perlu dinilai dan yang sudah selesai.
+- **Formulir Penilaian Multi-Tahap:** Halaman penilaian terstruktur dengan beberapa tab (`Penilaian Proposal`, `Penilaian Presentasi`, `Penilaian Luaran`) yang alurnya dikontrol penuh oleh Admin.
+- **Sistem Login Terpisah:** Keamanan terjamin dengan sistem otentikasi dan *guard* terpisah khusus untuk reviewer.
+- **Manajemen Profil:** Halaman untuk mengelola data diri dan profil SINTA, lengkap dengan fitur sinkronisasi otomatis.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠️ Teknologi yang Digunakan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Framework:** Laravel 11
+- **Panel Admin & UI:** Filament PHP 3
+- **Frontend Interaktif:** Livewire 3 & Alpine.js
+- **Styling:** Tailwind CSS
+- **Database:** MySQL
+- **Web Scraper:** Symfony BrowserKit & HTTP Client
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 🚀 Instalasi & Setup
 
-## Contributing
+1.  **Clone repositori:**
+    ```bash
+    git clone [https://github.com/](https://github.com/)[rizyourbae]/[smart-p2m].git
+    cd [NAMA_REPO_ANDA]
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2.  **Install dependensi:**
+    ```bash
+    composer install
+    npm install
+    ```
 
-## Code of Conduct
+3.  **Setup Environment:**
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+    * *Buka file `.env` dan sesuaikan konfigurasi database Anda (DB_DATABASE, DB_USERNAME, DB_PASSWORD).*
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4.  **Jalankan Migrasi & Seeder:**
+    ```bash
+    php artisan migrate --seed
+    ```
 
-## Security Vulnerabilities
+5.  **Buat Link Storage:**
+    ```bash
+    php artisan storage:link
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6.  **Compile Aset Frontend:**
+    ```bash
+    npm run dev
+    ```
 
-## License
+7.  **Jalankan Server Development:**
+    ```bash
+    php artisan serve
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 🤝 Kontribusi
+
+Kontribusi, isu, dan permintaan fitur sangat diterima. Jangan ragu untuk membuat *fork* dari repo ini dan membuat *pull request*.
+
+---
+
+## 📄 Lisensi
+
+Proyek ini berada di bawah Lisensi MIT.
+
+---
+
+Dibuat dengan ❤️ oleh **[rizyourbae]**
