@@ -2,8 +2,8 @@
 
 **SMART-P2M** adalah aplikasi web komprehensif yang dirancang untuk mengelola seluruh siklus hidup proposal penelitian dan pengabdian kepada masyarakat di lingkungan akademik, khususnya di UIN Sultan Aji Muhammad Idris Samarinda. Sistem ini dibangun dengan **TALL Stack (Tailwind CSS, Alpine.js, Laravel, Livewire)** dan diperkuat oleh **Filament PHP** untuk menciptakan panel administrasi yang kuat dan interaktif.
 
-![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php)
-![Laravel Version](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel)
+![PHP Version](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php)
+![Laravel Version](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel)
 ![Filament Version](https://img.shields.io/badge/Filament-3.x-F59E0B?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
