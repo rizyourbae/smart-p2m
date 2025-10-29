@@ -19,7 +19,6 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Navigation\NavigationGroup;
-use Solutionforest\FilamentLoginScreen\Filament\Pages\Auth\Themes\Theme2\LoginScreenPage as LoginScreenPage;
 use Filament\Support\Enums\MaxWidth;
 class ReviewerPanelProvider extends PanelProvider
 {
@@ -36,7 +35,6 @@ class ReviewerPanelProvider extends PanelProvider
             ->maxContentWidth(MaxWidth::Full)
             ->login()
             ->authGuard('reviewer')
-            ->login(LoginScreenPage::class)
             ->databaseNotifications()
             ->databaseNotificationsPolling('30s')
             ->colors([
